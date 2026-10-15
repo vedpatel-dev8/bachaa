@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For Yatu 💗</title>
+  <meta name="theme-color" content="#ff8fb1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- Floating + bursting hearts live here -->
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- Welcome gate (a tap here also lets the music start on phones) -->
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <div class="big-heart" aria-hidden="true">💗</div>
+      <h1 class="script">For <span class="her-name">Yatu</span></h1>
+      <p>I made something just for you, from my heart.</p>
+      <button class="btn" id="enterBtn" type="button">Open 💌</button>
+      <small>🎵 Turn your volume up a little</small>
+    </div>
+  </div>
+
+  <main id="site" class="hidden">
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="eyebrow">From my heart to yours</p>
+      <h1 class="script">I'm so sorry, <span class="her-name">Yatu</span></h1>
+      <p class="lead">I hurt your feelings, and that is the last thing I ever want to do. Please let me tell you how I feel.</p>
+      <a href="#messages" class="btn">Read my apology ↓</a>
+    </section>
+
+    <!-- Interactive apology messages -->
+    <section class="section reveal" id="messages">
+      <h2 class="script">My Apology</h2>
+      <p class="sub">Tap the buttons to read each message 💕</p>
+      <div class="card msg-card">
+        <div class="msg-text" id="msgText" aria-live="polite"></div>
+        <div class="msg-nav">
+          <button class="btn ghost" id="prevMsg" type="button">← Back</button>
+          <span id="msgCount" class="count"></span>
+          <button class="btn" id="nextMsg" type="button">Next 💗</button>
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <!-- Photo gallery -->
+    <section class="section reveal" id="gallery-section">
+      <h2 class="script">Our Memories</h2>
+      <p class="sub">Every picture reminds me how lucky I am to have you 📸</p>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- Secret love letter -->
+    <section class="section reveal" id="secret">
+      <h2 class="script">A Secret Love Letter</h2>
+      <p class="sub">Just for your eyes only 🤫</p>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" type="button" aria-label="Open the secret love letter">
+          <span class="env-body"></span>
+          <span class="env-flap"></span>
+          <span class="env-front"></span>
+          <span class="env-seal" aria-hidden="true">❤</span>
+          <span class="env-label script">For <span class="her-name">Yatu</span> 💌</span>
+        </button>
+        <form class="lock" id="lock" autocomplete="off">
+          <input id="lockInput" type="text" placeholder="Secret word…" aria-label="Secret word">
+          <button class="btn" type="submit">Unlock 🔓</button>
+        </form>
+        <p class="lock-msg" id="lockMsg"></p>
+        <p class="tap-hint" id="tapHint">Tap the envelope to open it</p>
+      </div>
+      <div class="letter" id="letter">
+        <div class="paper" id="letterBody"></div>
+      </div>
+    </section>
+
+    <!-- The big question -->
+    <section class="section reveal" id="forgive">
+      <h2 class="script">One Little Question…</h2>
+      <p class="sub">Will you give me a chance to make it right?</p>
+      <div class="card forgive-card">
+        <p class="question script">Yatu, will you forgive me? 🥺</p>
+        <div class="choices" id="choices">
+          <button class="btn yes-btn" id="yesBtn" type="button">Yes, I forgive you 💖</button>
+          <button class="btn ghost no-btn" id="noBtn" type="button">No 😢</button>
+        </div>
+        <p class="plea" id="plea"></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with all my love by <span class="my-name">Ved</span> 💗</p>
+      <p class="small">Forever yours, always. Tap anywhere for a little love.</p>
+    </footer>
+  </main>
+
+  <!-- Photo viewer -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <figure>
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <!-- She said yes! -->
+  <div class="celebrate" id="celebrate">
+    <div class="card celebrate-card">
+      <div class="big-heart" aria-hidden="true">🥰</div>
+      <h2 class="script">Thank you, my love</h2>
+      <p>You just made me the happiest person alive. I promise to listen better, love harder, and never take you for granted.</p>
+      <p class="script big">I love you, <span class="her-name">Yatu</span> 💖</p>
+      <button class="btn" id="closeCelebrate" type="button">Back to the site</button>
+    </div>
+  </div>
+
+  <!-- Music control -->
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Toggle music" aria-pressed="false">🎵</button>
+
+  <noscript>
+    <p style="padding:24px;text-align:center">Please turn on JavaScript to see this page. I love you, Yatu 💗</p>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
