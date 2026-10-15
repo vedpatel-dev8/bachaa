@@ -36,7 +36,7 @@ const CONFIG = {
     { src: 'photo3.jpg', caption: 'Where my heart lives' },
     { src: 'photo4.jpg', caption: 'Our happy place' },
     { src: 'photo5.jpg', caption: 'You + me = always' },
-    { src: 'photo6.jpg', caption: 'My whole world' }
+    { src: 'photo7.jpg', caption: 'My whole world' }
   ],
 
   // The secret love letter, one paragraph per line.
